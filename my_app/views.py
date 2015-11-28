@@ -6,7 +6,7 @@ from flask.ext.sqlalchemy import get_debug_queries
 from flask.ext.babel import gettext
 from datetime import datetime
 from guess_language import guessLanguage
-from app import app, db, lm, oid, babel
+from my_app import app, db, lm, oid, babel
 from .forms import LoginForm, EditForm, PostForm, SearchForm
 from .models import User, Post
 from .emails import follower_notification

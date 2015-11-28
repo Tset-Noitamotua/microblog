@@ -69,4 +69,4 @@ if os.environ.get('HEROKU') is not None:
 
 app.jinja_env.globals['momentjs'] = momentjs
 
-from app import views, models
+from my_app import views, models

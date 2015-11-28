@@ -1,7 +1,7 @@
 from hashlib import md5
 import re
-from app import db
-from app import app
+from my_app import db
+from my_app import app
 from config import WHOOSH_ENABLED
 
 import sys
