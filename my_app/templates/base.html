@@ -28,7 +28,14 @@
 
 			<!-- Make sure all your bars are the first things in your <body> -->
 			<header class="bar bar-nav">
-      			<h1 class="title">Ratchet</h1>
+      			
+				<div class="container">
+					<div class="row">
+						<a href="/index">home</a>
+						<a href="/login">login</a>
+					</div>
+				</div>
+				
     		</header>
 
 			<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
@@ -62,7 +69,6 @@
 				  </li>
 					
 				  <li class="table-view-cell">
-				  <li class="table-view-cell">
 				  <h1>Microblog</h4>
 					{% with messages = get_flashed_messages() %}
 					{% if messages %}
@@ -75,6 +81,7 @@
 					{% endwith %}
 					{% block content %}{% endblock %}
 				  </li>	
+					
 				</ul>
 			  </div>
 			</div>
