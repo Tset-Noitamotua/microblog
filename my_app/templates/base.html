@@ -16,12 +16,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <!-- Include the compiled Ratchet CSS -->
-    <link href="ratchet.css" rel="stylesheet">
+	<link href="{{ url_for('.static', filename='css/ratchet.css') }}" rel="stylesheet" media="screen">
 
     <!-- Include the compiled Ratchet JS -->
-    <script src="ratchet.js"></script>
-
-
+	<script src="{{ url_for('.static', filename='js/ratchet.js') }}"></script>
 
 </head>
 <body>
