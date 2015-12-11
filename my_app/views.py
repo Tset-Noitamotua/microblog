@@ -5,6 +5,8 @@ from forms import LoginForm
 
 @app.route('/')
 @app.route('/index')
+@app.route('/ratchet.css')
+@app.route('/ratchet.js')
 
 
 def index():
