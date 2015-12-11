@@ -27,12 +27,8 @@
 			<!-- Make sure all your bars are the first things in your <body> -->
 			<header class="bar bar-nav">
       			
-				<div class="container">
-					<div class="row">
 						<a href="/index">home</a>
 						<a href="/login">login</a>
-					</div>
-				</div>
 				
     		</header>
 
@@ -81,6 +77,43 @@
 				  </li>	
 					
 				</ul>
+				  
+				  
+				  
+				  	<div class="slider" id="mySlider">
+				  	<div class="slide-group">
+					<div class="slide">
+					  <img src="/assets/img/slide-1.jpg">
+					  <span class="slide-text">
+						<span class="icon icon-left-nav"></span>
+						Slide me
+					  </span>
+					</div>
+					<div class="slide">
+					  <img src="/assets/img/slide-2.jpg">
+						
+						
+						<h1>Microblog</h4>
+						{% with messages = get_flashed_messages() %}
+						{% if messages %}
+						<ul>
+						{% for message in messages %}
+							<li>{{ message }} </li>
+						{% endfor %}
+						</ul>
+						{% endif %}
+						{% endwith %}
+						{% block content %}{% endblock %}
+						
+						
+					</div>
+					<div class="slide">
+					  <img src="/assets/img/slide-3.jpg">
+					</div>
+				  	</div>
+					</div>
+				  
+				  
 			  </div>
 			</div>
 	
