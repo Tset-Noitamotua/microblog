@@ -35,81 +35,40 @@
 			<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 			<div class="content">
 			  <p class="content-padded">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:</p>
-			  <div class="card">
-				<ul class="table-view">
-					
-				  <li class="table-view-cell">
-					<a class="push-right" href="http://goratchet.com">
-					  <strong>Ratchet documentation</strong>
-					</a>
-				  </li>
-					
-				  <li class="table-view-cell">
-					<a class="push-right" href="https://github.com/twbs/ratchet/">
-					  <strong>Ratchet on Github</strong>
-					</a>
-				  </li>
-					
-				  <li class="table-view-cell">
-					<a class="push-right" href="https://groups.google.com/forum/#!forum/goratchet">
-					  <strong>Ratchet Google group</strong>
-					</a>
-				  </li>
-					
-				  <li class="table-view-cell">
-					<a class="push-right" href="https://twitter.com/goratchet">
-					  <strong>Ratchet on Twitter</strong>
-					</a>
-				  </li>
-					
-				  <li class="table-view-cell">
-				  <h1>Microblog 1 </h4>
-					
-				  </li>	
-					
-				</ul>
-				  
-				  
-				  
+			  
 				  	<div class="slider" id="mySlider">
 				  	<div class="slide-group">
 					<div class="slide">
 					  <img src="http://news.vanderbilt.edu/vanderbiltmagazine/wp-content/uploads/RobotEvolution.jpg">
-					  <span class="slide-text">
+					  <span style="color: black" class="slide-text">
 						<span class="icon icon-left-nav"></span>
 						Slide me
 					  </span>
 					</div>
 					<div class="slide">
-	
-						<div color="white">
-						<h1>Microblog 2</h4>
-						{% with messages = get_flashed_messages() %}
-						{% if messages %}
-						<ul>
-						{% for message in messages %}
-							<li>{{ message }} </li>
-						{% endfor %}
-						</ul>
-						{% endif %}
-						{% endwith %}
-						{% block content %}{% endblock %}
-						</div>
-						
+						<img src="http://news.vanderbilt.edu/vanderbiltmagazine/wp-content/uploads/RobotEvolution.jpg">
 					</div>
 					<div class="slide">
 					  <img src="http://cdn.wonderfulengineering.com/wp-content/uploads/2014/01/Robotic-Muscle-2-798x350.jpg">
 					</div>
 				  	</div>
-					</div>
-				  
-				  
-			  </div>
+				</div>
+				
+				<div color="white">
+				<h1>Microblog 2</h4>
+				{% with messages = get_flashed_messages() %}
+				{% if messages %}
+				<ul>
+				{% for message in messages %}
+					<li>{{ message }} </li>
+				{% endfor %}
+				</ul>
+				{% endif %}
+				{% endwith %}
+				{% block content %}{% endblock %}
+				</div>
+
 			</div>
-	
-	  		<div>
-				wlad war hier
-		 	</div>
 
 
 </body>
