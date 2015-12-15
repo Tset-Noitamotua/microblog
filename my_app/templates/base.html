@@ -19,7 +19,7 @@
     		<link href="{{ url_for('.static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
 	-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	
+	<link href="{{ url_for('.static', filename='css/ratchet.min.css') }}" rel="stylesheet" media="screen">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/cyborg/bootstrap.min.css" rel="stylesheet" />
 	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -33,21 +33,30 @@
 </head>
 
 <body>
-
-			<nav class="navbar navbar-inverse navbar-static-top">
-				<div class="container">
-        			<div class="navbar-header">
-						<ul class="navbar-left">
-							<a class="navbar-brand" href="/index">Home</a>
-							<a class="navbar-brand" href="/index">About</a>
-							<button type="button" class="btn btn-default navbar-btn" href="/login">Sign in</button>
-						</ul>
-					</div>
-				</div>
-				
-    		</nav>
-
-			<!-- Main jumbotron for a primary marketing message or call to action -->
+	
+			<div class="slider" id="mySlider">
+			  <div class="slide-group">
+				  
+				<div class="slide" style="background-color: grey">
+				  
+					<nav class="navbar navbar-inverse navbar-static-top">
+						<div class="container">
+							<div class="navbar-header">
+								<ul class="navbar-left">
+									<a class="navbar-brand" href="/index">Home</a>
+									<a class="navbar-brand" href="/index">About</a>
+									<button type="button" class="btn btn-default navbar-btn" href="/login">Sign in</button>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					
+						<span class="slide-text">
+						<span class="icon icon-left-nav"></span>
+						Slide me
+						</span>
+					
+					<!-- Main jumbotron for a primary marketing message or call to action -->
 			<div class="jumbotron">
 			  <div class="container">
 				<h1>Hello, world!</h1>
@@ -86,6 +95,22 @@
 					<p>&copy; 2015 Testmonkeyz, Inc.</p>
 				</footer>
 			</div>
+					
+				</div>
+				  
+				<div class="slide" style="background-color: yellow">
+				  <img src="/assets/img/slide-2.jpg">
+				</div>
+				  
+				<div class="slide" style="background-color: green">
+				  <img src="/assets/img/slide-3.jpg">
+				</div>
+				  
+			  </div>
+			</div>
+			
+
+			
 	
 				
 
@@ -94,6 +119,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed 
 	<script src="{{ url_for('.static', filename='js/bootstrap.min.js') }}"></script> -->
 	
+	<script src="{{ url_for('.static', filename='js/ratchet.min.js') }}"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	
