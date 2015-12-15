@@ -2,26 +2,31 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	
 	{% if title %}
 	<title>{{ title }} - microblog</title>
 	{% else %}
 	<title>microblog</title>
 	{% endif %}
 	
-	<!-- Sets initial viewport load and disables zooming  -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <!-- Include the compiled Ratchet CSS -->
-	<link href="{{ url_for('.static', filename='css/ratchet.css') }}" rel="stylesheet" media="screen">
-
-    <!-- Include the compiled Ratchet JS -->
-	<script src="{{ url_for('.static', filename='js/ratchet.js') }}"></script>
-
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	
 </head>
+
 <body>
 
 			<!-- Make sure all your bars are the first things in your <body> -->
@@ -34,25 +39,6 @@
 
 			<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 			<div class="content">
-			  <p class="content-padded">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:</p>
-			  
-				  	<div class="slider" id="mySlider">
-				  	<div class="slide-group">
-					<div class="slide">
-					  <img src="http://news.vanderbilt.edu/vanderbiltmagazine/wp-content/uploads/RobotEvolution.jpg">
-					  <span style="color: black" class="slide-text">
-						<span class="icon icon-left-nav"></span>
-						Slide me
-					  </span>
-					</div>
-					<div class="slide">
-						<img src="http://news.vanderbilt.edu/vanderbiltmagazine/wp-content/uploads/RobotEvolution.jpg">
-					</div>
-					<div class="slide">
-					  <img src="http://cdn.wonderfulengineering.com/wp-content/uploads/2014/01/Robotic-Muscle-2-798x350.jpg">
-					</div>
-				  	</div>
-				</div>
 				
 				<div color="white">
 				<h1>Microblog 2</h4>
@@ -70,6 +56,10 @@
 
 			</div>
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
