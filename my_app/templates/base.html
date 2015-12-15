@@ -19,9 +19,7 @@
     		<link href="{{ url_for('.static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
 	-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
+	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,18 +32,16 @@
 
 <body>
 
-			<nav class="navbar navbar-inverse navbar-fixed-top">
+			<nav class="navbar navbar-inverse navbar-static-top">
 				<div class="container">
         			<div class="navbar-header">
-						<ul class="navbar-right">
-							<li><a class="navbar-brand" href="/index">Home</a></li>
-							<li><a class="navbar-brand" href="/index">About</a></li>
-						</ul>
 						<ul class="navbar-left">
-							<li><a class="navbar-brand" href="/login" role="button">Login</a></li>
+							<a class="navbar-brand" href="/index">Home</a>
+							<a class="navbar-brand" href="/index">About</a>
+							<button type="button" class="btn btn-default navbar-btn" href="/login">Sign in</button>
 						</ul>
 					</div>
-				</div>
+				</div>s
 				
     		</nav>
 
