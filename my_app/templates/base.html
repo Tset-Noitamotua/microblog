@@ -37,10 +37,13 @@
 			<nav class="navbar navbar-inverse navbar-fixed-top">
 				<div class="container">
         			<div class="navbar-header">
-						
-						<a class="navbar-brand" href="/index">Home</a>
-						<a class="navbar-brand" href="/login">Login</a>
-						
+						<ul class="navbar-right">
+							<li><a class="navbar-brand" href="/index">Home</a></li>
+							<li><a class="navbar-brand" href="/index">About</a></li>
+						</ul>
+						<ul class="navbar-left">
+							<li><a class="navbar-brand" href="/login" role="button">Login</a></li>
+						</ul>
 					</div>
 				</div>
 				
@@ -72,6 +75,7 @@
 						{% endwith %}
 						{% block content %}{% endblock %}
 						</div>
+						<p><a class="btn btn-default" href="/login" role="button">View details &raquo;</a></p>
 					</div>
 				
 					<div class="col-md-6">
